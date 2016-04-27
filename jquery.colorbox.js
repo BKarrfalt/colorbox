@@ -889,6 +889,10 @@
 				if (settings.get('fastIframe')) {
 					$(iframe).trigger('load');
 				}
+            
+            			if (settings.get('iTitle')) {
+					$(iframe).attr({title: settings.get('iTitle')});
+				}
 			} else {
 				complete();
 			}
